@@ -4,9 +4,7 @@ import Image from "next/image";
 export default function Home() {
   function copyToClipboard() {
     alert("btn cliked");
-    const loginLink = document
-      .querySelector(".home-btn")
-      ?.getAttribute("data-login-link");
+    const loginLink = `https://hinghoihome.com/hello/212224236`;
     const bookingInfo = `${loginLink}`;
     navigator.clipboard.writeText(bookingInfo.trim()).then(
       function () {
@@ -24,7 +22,7 @@ export default function Home() {
           onClick={copyToClipboard}
           className="bg-primary-500 px-4 py-2 text-4xl"
         >
-          Copy Link !
+          Copy Link ! V.2
         </button>
       </div>
     </main>
